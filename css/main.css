@@ -1,0 +1,758 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Hind+Madurai:wght@400;600;700&family=Roboto:wght@400;500&display=swap');
+
+/*
+font-family: 'Fredoka', sans-serif;
+
+font-family: 'Hind Madurai', sans-serif;
+
+font-family: 'Roboto', sans-serif;
+ */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+
+}
+
+/* header */
+
+.header{
+    background-color: #fff6f9;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* navbar */
+
+.navbar{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #150101;
+    margin-top: 43px;
+    animation: slideRight 1s ease forwards;
+}
+
+.navbar a{
+    color: #545454;
+    
+}
+
+.navbar a:not(:last-child){
+    margin-right: 40px;
+}
+
+.navbar span{
+    font-weight: 700;
+    font-size: 15px;
+    color: #D23166;
+}
+
+.navbar a:hover{
+    font-weight: 700;
+    font-size: 14px;
+    color: #D23166;
+}
+
+/* button */
+
+.btn{
+    height: auto;
+    background-color:#D23166;
+    padding: 15px 50px;
+
+    height: 49px;
+    text-align: center;
+    border-radius:5px ;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 26px;
+    animation: slideRight 1s ease forwards;
+    transition: .3s ease; 
+    color: #fafafa;
+}
+
+.btn a{
+    color: #FAFAFA;
+
+}
+
+.btn:hover{
+    background-color:#fa2d72;
+}
+
+.logo{
+    margin-top: 11px;
+    animation: slideRight 1s ease forwards; 
+    
+}
+
+@keyframes slideTop{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* info */
+
+.container__info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info{
+    background-color: #fff6f9;
+    font-family: 'Hind Madurai', sans-serif;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    z-index: 1;
+    margin-bottom: 80px;
+}
+
+.title__info{
+    margin-top: 100px;
+    animation: slideRight 1s ease forwards;
+}
+
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom:10px;
+}
+
+.spansubject{
+    font-size: 57px;
+    font-weight: 700;
+    font-family: 'Fredoka', sans-serif;
+    color: #D23166;
+}
+
+.subject{
+    font-size: 55px;
+    font-weight: 700;
+    font-family: 'Fredoka', sans-serif;
+    width: 665px;
+    color: #0F0101;
+    padding-bottom: 35px;
+}
+
+.suptitle{
+    width: 523px;
+    font-weight: 400;
+    font-size: 19px;
+    color: #535353;
+    margin-bottom: 50px;
+}
+
+.icecream__info{
+    max-width: 100%;
+    transform: translateX(-143px);
+    object-fit: contain;
+}
+
+/* advantages */
+
+
+.advantages{
+    animation: slideLeft 1s ease forwards;
+    font-family: 'Hind Madurai', sans-serif;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company__suptitle{
+    color: #535353;
+}
+
+.company__subject{
+    padding-bottom: 9px;
+    padding-top: 24px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.free__shipping{
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    padding: 27px;
+    text-align: center;
+}
+
+.packaging{
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    padding: 27px;
+    text-align: center;
+}
+
+.money__back{
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    padding: 27px;
+    text-align: center;
+}
+
+.delivery{
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    padding: 27px;
+    text-align: center;
+    transition: .4s ease;
+}
+
+.delivery:hover{
+    background: #007bff;
+    color: #fff;
+}
+
+.packaging{
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    padding: 27px;
+    text-align: center;
+    transition: .4s ease;
+}
+
+.packaging:hover{
+    background: #007bff;
+    color: #fff;
+}
+
+.money__back{
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    padding: 27px;
+    text-align: center;
+    transition: .4s ease;
+}
+
+.money__back:hover{
+    background: #007bff;
+    color: #fff;
+}
+
+.free__shipping{
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    padding: 27px;
+    text-align: center;
+    transition: .4s ease;
+}
+
+.free__shipping:hover{
+    background: #007bff;
+    color: #fff;
+}
+
+/* details */
+
+.details{
+    background-color: #fff6f9;
+}
+
+.subject__details{
+    font-family: 'Hind Madurai', sans-serif;
+    padding-top: 120px;
+}
+
+.subtitle__details{
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.cream__detail{
+    margin-left: 60px;
+}
+
+/*
+
+copied fonts
+
+font-family: 'Fredoka', sans-serif;
+
+font-family: 'Hind Madurai', sans-serif;
+
+font-family: 'Roboto', sans-serif;
+
+ */
+
+
+/* our product */
+
+.product__info{
+    animation: slideRight 1s ease forwards;
+    margin-top: 137px;
+    margin-bottom: 64px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 600;
+    font-size: 44px;
+    text-align: center;
+}
+
+.productbar{
+    animation: slideLeft 1s ease forwards;
+    width: 887px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #535353;
+    margin-bottom: 209px;
+}
+
+.productbar a{
+    color: #535353;
+}
+
+.select__product{
+    
+    color: #000;
+    font-size: 17px;
+    text-decoration: underline 2px;
+    text-decoration-color: #D23166;
+}
+
+.products{
+    animation: slideLeft 1s ease forwards;
+    transition: .4s;
+}
+
+.products:hover{
+    color: #000;
+    text-decoration: underline 2px;
+    text-decoration-color: #D23166;
+}
+
+/* product */
+.product__container{
+    overflow-x: visible;
+}
+
+.product-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__two{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+.product__suptitle{
+    margin-top: 11px;
+    margin-bottom: 34px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+.product__name{
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.info-or__product{
+    padding-left: 150px;
+}
+
+.product__subject{
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 35px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.pay__span{
+    font-size: 20px;
+    color: #535353;
+    text-decoration: line-through;
+}
+
+.product__pictures{
+    margin-bottom: 30px;
+    margin-top: 150px;
+    margin-top: -10%;
+}
+
+.product__two{
+    margin-top: 50px;
+}
+
+.product__three{
+    margin-top: 50px;
+}
+
+.product__four{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.info-or__body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.review{
+    font-weight: 400;
+    font-size: 16px;
+    color: #545454;
+}
+
+.quotes{
+    color: #F6762C;
+    font-size: 25px;
+}
+
+.american{
+    color: #535353;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.body__name{
+    line-height: 28px;
+    font-weight: 500;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.woman__info{
+    display: flex;
+}
+
+.body__photo{
+    margin-right: 16px;
+    margin-bottom: 30px;
+}
+
+.american__name{
+    padding-top: 5px;
+}
+
+.review{
+    width: 322px;
+    margin-bottom:36px;
+}
+
+.top__review{
+    display: flex;
+    align-items: center;
+}
+
+.woman__review{
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: .5s;
+}
+
+.man__review{
+    margin-left: 20px;
+    transition: .5s;
+}
+
+.woman__reviewTwo{
+    margin-right: 20px;
+    transition: .5s;
+}
+
+.woman__reviewTwo:hover{
+    width: 57px;
+    height: 57px;
+}
+
+.left-arrow{
+    transition: .5s;
+}
+
+.left-arrow:hover{
+    width: 20px;
+    height: 20px;
+}
+
+.woman__review:hover{
+    width: 77px;
+    height: 77px;
+}
+
+.man__review:hover{
+    width: 57px;
+    height: 57px;
+}
+
+.right-arrow{
+    transition: .5s;
+}
+
+.right-arrow:hover{
+    width: 20px;
+    height: 20px;
+}
+
+.download__app{
+    background: #fff6f9;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container__app{
+    display: flex;
+}
+
+.photo__app{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+
+.subject__app{
+    margin-bottom: 25px;
+    font-size: 44px;
+    font-weight: 500;
+}
+
+.info__app{
+    margin-left: 534px;
+
+}
+
+.subtitle__app{
+    color: #535353;
+    font-weight: 400;
+    font-size: 18px;    
+}
+
+.do__add-cart{
+    align-items: center;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 19px;
+    display: flex;
+}
+
+.do__select{
+    align-items: center;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 31px;
+    display: flex;
+    margin-bottom: 19px;
+}
+
+.do__order{
+    align-items: center;
+    font-size: 22px;
+    font-weight: 400;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.apple__app{
+    margin-top: -5px;
+}
+
+.photo__app{
+    position: absolute;
+    margin-top: 5%;
+}
+
+/* form */
+
+.send__form{
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.send__info{
+    padding: 18px 190px 16px 30px ;
+    background: #d8d8d8;
+    border-radius: 5px 0 0 5px;
+    margin-top: 30px;
+    margin-right: -5px;
+}
+
+.send__btn_suptitle{
+    border-radius:0 5px 5px 0 ;
+}
+
+.info__form{
+    
+    font-weight: 500;
+    font-size: 44px;
+    margin-top: 195px;
+}
+
+.send__info-form{
+    align-items: center;
+}
+
+/* footer */
+
+.footer{
+    padding-bottom: 114px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 150px;
+    padding-left: 150px;
+    background: #000;
+    color: #b4b4b4;
+}
+
+.we__follow{
+    color: #fff;
+    font-weight: 500;
+}
+
+.we__subject{
+    margin-top: 9px;
+    margin-bottom: 25px;
+}
+
+.footer__container{
+    display: flex;
+}
+
+.us__img{
+    display: flex;
+}
+
+.we__social{
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+/* footer navigation */
+
+.navbar__footer{
+    display: block;
+    margin-top: 80px;
+    margin-left: 39px;
+}
+
+.navbar__footer a{
+    color: #b4b4b4;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.navbar__footer a:nth-child(1){
+    color: #fff;
+}
+
+/* policy */
+
+.nav__policy a{
+    margin-left: 134px;
+    color: #b4b4b4;
+    display: block;
+}
+
+.policy__info{
+    margin-top: 90px;
+}
+
+.nav__policy{
+    color: #b4b4b4;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: 134px;
+}
+
+/* email send form */
+
+.email__send{
+
+}
+
+.email__subject{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.send__btn{
+    border-radius: 5px;
+    background-color: #D23166;
+    padding: 13px 18px 15.5px 18px;
+    font-size: 20px;
+    font-weight: 500;
+    align-items: center;
+    color: #fff;
+}
+
+.email__send{
+    padding: 18px 83px 16px 30px ;
+    background: transparent;
+    border: 1px solid #D23166;
+    border-radius: 5px 0 0 5px;
+    margin-top: 30px;
+    margin-right: -5px;
+}
+
+.email__form{
+    margin-left: 150px;
+    margin-top: -10%;
+}
+
+.pay__us{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.pay__us img{
+    margin-right: 15px;
+}
