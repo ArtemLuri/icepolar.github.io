@@ -715,10 +715,11 @@ font-family: 'Roboto', sans-serif;
 /* email send form */
 
 .email__send{
-
+    color: #fff;
 }
 
 .email__subject{
+    color: #fff;
     font-size: 16px;
     font-weight: 500;
 }
